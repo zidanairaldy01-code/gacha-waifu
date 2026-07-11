@@ -22,3 +22,8 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Keep these deploy config files
+!nixpacks.toml
+!railway.toml
+!.env.railway.example

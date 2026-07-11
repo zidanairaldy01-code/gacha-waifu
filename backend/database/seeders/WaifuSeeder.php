@@ -9,9 +9,11 @@ class WaifuSeeder extends Seeder
 {
     public function run(): void
     {
-        // Bersihkan data lama agar id tidak bertabrakan saat seeder dijalankan ulang
-        DB::table('waifus')->delete();
-        DB::table('banners')->delete();
+        // Skip seeding jika data sudah ada (safe untuk production re-deploy)
+        if (DB::table('banners')->count() > 0) {
+            $this->command?->info('WaifuSeeder: data sudah ada, skip.');
+            return;
+        }
 
         // 1. Buat Banner
         $banner1 = DB::table('banners')->insertGetId([
