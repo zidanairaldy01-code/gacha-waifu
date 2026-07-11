@@ -416,6 +416,7 @@ export default function GachaPage() {
           </div>
         )}
 
+
         {/* ── Result Card ───────────────────────────────────── */}
         {result && (
           <div className={`transition-all duration-700 ${showResult ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-90 translate-y-4"} mb-10 w-full`}>
