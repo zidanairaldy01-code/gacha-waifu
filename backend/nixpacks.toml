@@ -1,14 +1,12 @@
 # Nixpacks config for Railway deployment
 # Tells Railway how to build and run the Laravel app
 
+# Force ONLY PHP provider — prevent Node/npm detection from package.json
+providers = ["php"]
+
 [phases.setup]
 nixPkgs = ["php82", "php82Extensions.pdo", "php82Extensions.pdo_pgsql", "php82Extensions.mbstring", "php82Extensions.tokenizer", "php82Extensions.xml", "php82Extensions.ctype", "php82Extensions.fileinfo", "php82Extensions.openssl", "php82Extensions.curl", "php82Extensions.zip", "composer"]
 
-# Explicitly override Node install phase with empty command to skip npm ci
-[phases.nodeInstall]
-cmds = []
-
-# Only install PHP deps
 [phases.install]
 cmds = ["composer install --no-dev --optimize-autoloader"]
 
