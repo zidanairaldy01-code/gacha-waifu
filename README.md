@@ -62,7 +62,4 @@ Desain database harus siap menangani relasi antara user, koleksi waifu, dan memo
 - Security check: Pastikan saldo gem/koin tidak bisa dimanipulasi dari sisi frontend (proses pengurangan koin harus valid di sisi server/backend).
 - Uji coba alur user experience dari daftar, gacha, hingga chatting.
 
-## 💡 Tips Tambahan untuk Proyek Ini
-- **Manajemen Biaya API:** Memanggil API AI berbayar setiap kali user nge-chat bisa menguras biaya. Batasi dengan sistem Energi/Stamina. Jadi, user butuh energi untuk nge-chat waifu, dan energi itu bisa terisi ulang per jam atau dibeli dengan koin web.
-- **Local AI (Alternatif Bebas Biaya):** Jika ingin hemat biaya API selama masa pengembangan, kamu bisa mencoba menjalankan model lokal seperti Llama 3 menggunakan Ollama di komputer lokal sebagai backend AI-nya.
-# gacha-waifu
+ifu
