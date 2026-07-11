@@ -16,7 +16,7 @@ return [
         'http://localhost:3000',
         'http://localhost:3001',
         'http://127.0.0.1:3000',
-        env('FRONTEND_URL', 'https://gacha-waifu.vercel.app'),
+        env('FRONTEND_URL', 'https://gacha-waifu-tawny.vercel.app'),
     ],
 
     'allowed_origins_patterns' => [],
